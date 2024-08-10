@@ -864,10 +864,19 @@ body.dark-theme {
 .about {
   background-color: var(--secondary-body-color);
   transition: background-color 0.4s;
+  border-top-left-radius: 100% 50px;
+  border-top-right-radius: 100% 50px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
+    
 }
 
 .about__container {
   row-gap: 0;
+  position: relative;
+  z-index: 2;
 }
 
 .tech-stack .circle {
@@ -1692,6 +1701,7 @@ body.dark-theme {
 
   .home {
     background-image: url(../img/medium-bg-light.jpg);
+  
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

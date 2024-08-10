@@ -364,126 +364,82 @@
       <!--==================== PROJECTS ===================-->
       <section class="projects section" id="projects">
         <h2 class="section__title-1">Projects.</h2>
-
+    
         <div class="projects__tabs">
-          <a href="#web" class="tab-button active" data-tab="web">Web Apps</a>
-          <a href="#mobile" class="tab-button" data-tab="mobile">Mobile Apps</a>
-          <a href="#others" class="tab-button" data-tab="others">Others</a>
+            <a href="#web" class="tab-button active" data-tab="web">Web Apps</a>
+            <a href="#mobile" class="tab-button" data-tab="mobile">Mobile Apps</a>
+            <a href="#others" class="tab-button" data-tab="others">Others</a>
         </div>
+    
         <div class="projects__container container grid">
-          <!-- project 2 -->
-          <article class="projects__card">
-            <div class="projects__image">
-              <img
-                src="assets/img/project-infinity.svg"
-                alt=""
-                class="projects__img"
-              />
-              <a
-                href="https://ashvarya007.github.io/Infinity-Scroll/"
-                target="_blank"
-                class="projects__button button"
-              >
-                <i class="ri-arrow-right-up-line"></i>
-              </a>
-            </div>
-            <div class="projects__content">
-              <h3 class="projects__subtitle">JavaScript</h3>
-              <h2 class="projects__title">Infinite Scroll</h2>
-
-              <p class="projects__description">
-                A website that showcases infinte scroll using unsplash api. It
-                features Responsive grid, auto image loading, animations and
-                links to the original image in unsplash.
-              </p>
-            </div>
-            <div class="projects__buttons">
-              <a
-                href="https://ashvarya007.github.io/Infinity-Scroll/"
-                target="_blank"
-                class="projects__link"
-              >
-                <i class="ri-github-line"></i> View
-              </a>
-            </div>
-          </article>
-         
-         
-         
-
-          <!-- project 3 -->
-          <article class="projects__card">
-            <div class="projects__image">
-              <img
-                src="assets/img/project-netflix.svg"
-                alt=""
-                class="projects__img"
-              />
-              <a
-                href="https://zingy-cassata-4166e9.netlify.app/"
-                class="projects__button button"
-              >
-                <i class="ri-arrow-right-up-line"></i>
-              </a>
-            </div>
-            <div class="projects__content">
-              <h3 class="projects__subtitle">React App</h3>
-              <h2 class="projects__title">Online Media Streaming App</h2>
-
-              <p class="projects__description">
-                An online streaming web-app based on React.js. it features
-                Authentication, Real-time movie/series streaming data,
-                Responsive sections, and a Netflix API integration for viewing.
-              </p>
-            </div>
-            <div class="projects__buttons">
-              <a
-                href="https://zingy-cassata-4166e9.netlify.app/"
-                target="_blank"
-                class="projects__link"
-              >
-                <i class="ri-github-line"></i> View
-              </a>
-            </div>
-          </article>  <!-- project 1 -->
-          <article class="projects__card">
-            <div class="projects__image">
-              <img
-                src="assets/img/project-netflix.svg"
-                alt=""
-                class="projects__img"
-              />
-              <a
-                href="https://zingy-cassata-4166e9.netlify.app/"
-                class="projects__button button"
-              >
-                <i class="ri-arrow-right-up-line"></i>
-              </a>
-            </div>
-            <div class="projects__content">
-              <h3 class="projects__subtitle">Resdcact App</h3>
-              <h2 class="projects__title">Online Media Streaming App</h2>
-
-              <p class="projects__description">
-                An online streaming web-app based on React.js. it features
-                Authentication, Real-time movie/series streaming data,
-                Responsive sections, and a Netflix API integration for viewing.
-              </p>
-            </div>
-            <div class="projects__buttons">
-              <a
-                href="https://zingy-cassata-4166e9.netlify.app/"
-                target="_blank"
-                class="projects__link"
-              >
-                <i class="ri-github-line"></i> View
-              </a>
-            </div>
-          </article>
+            <!-- project 1: Web App -->
+            <article class="projects__card web">
+                <div class="projects__image">
+                    <img src="assets/img/project-infinity.svg" alt="" class="projects__img" />
+                    <a href="https://ashvarya007.github.io/Infinity-Scroll/" target="_blank" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+                <div class="projects__content">
+                    <h3 class="projects__subtitle">JavaScript</h3>
+                    <h2 class="projects__title">Infinite Scroll</h2>
+                    <p class="projects__description">
+                        A website that showcases infinite scroll using Unsplash API. It features responsive grid, auto image loading, animations, and links to the original image in Unsplash.
+                    </p>
+                </div>
+                <div class="projects__buttons">
+                    <a href="https://ashvarya007.github.io/Infinity-Scroll/" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                    </a>
+                </div>
+            </article>
+    
+            <!-- project 2: Mobile App -->
+            <article class="projects__card mobile">
+                <div class="projects__image">
+                    <img src="assets/img/project-netflix.svg" alt="" class="projects__img" />
+                    <a href="https://zingy-cassata-4166e9.netlify.app/" target="_blank" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+                <div class="projects__content">
+                    <h3 class="projects__subtitle">React App</h3>
+                    <h2 class="projects__title">Online Media Streaming App</h2>
+                    <p class="projects__description">
+                        An online streaming web-app based on React.js. It features authentication, real-time movie/series streaming data, responsive sections, and a Netflix API integration for viewing.
+                    </p>
+                </div>
+                <div class="projects__buttons">
+                    <a href="https://zingy-cassata-4166e9.netlify.app/" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                    </a>
+                </div>
+            </article>
+    
+            <!-- project 3: Others -->
+            <article class="projects__card others">
+                <div class="projects__image">
+                    <img src="assets/img/project-netflix.svg" alt="" class="projects__img" />
+                    <a href="https://zingy-cassata-4166e9.netlify.app/" target="_blank" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+                <div class="projects__content">
+                    <h3 class="projects__subtitle">Resdcact App</h3>
+                    <h2 class="projects__title">Online Media Streaming App</h2>
+                    <p class="projects__description">
+                        An online streaming web-app based on React.js. It features authentication, real-time movie/series streaming data, responsive sections, and a Netflix API integration for viewing.
+                    </p>
+                </div>
+                <div class="projects__buttons">
+                    <a href="https://zingy-cassata-4166e9.netlify.app/" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                    </a>
+                </div>
+            </article>
         </div>
-      </section>
-        </div>
-      </section>
+    </section>
+    
 
       <!--==================== Client Testimonials ====================-->
       <section class="clients__section section" id="clientReviews">
