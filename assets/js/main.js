@@ -5,27 +5,27 @@ const navMenu = document.getElementById('nav-menu'),
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
-if(navToggle){
-    navToggle.addEventListener('click', () =>{
-        navMenu.classList.add('show-menu')
-    })
-}
-document.addEventListener('DOMContentLoaded', () => { //yo
-  const tabButtons = document.querySelectorAll('.tab-button');
-  const tabContents = document.querySelectorAll('.tab-content');
+// if(navToggle){
+//     navToggle.addEventListener('click', () =>{
+//         navMenu.classList.add('show-menu')
+//     })
+// }
+// document.addEventListener('DOMContentLoaded', () => { //yo
+//   const tabButtons = document.querySelectorAll('.tab-button');
+//   const tabContents = document.querySelectorAll('.tab-content');
 
-  tabButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const target = button.dataset.tab;
+//   tabButtons.forEach(button => {
+//     button.addEventListener('click', () => {
+//       const target = button.dataset.tab;
 
-      tabButtons.forEach(btn => btn.classList.remove('active'));
-      tabContents.forEach(content => content.classList.remove('active'));
+//       tabButtons.forEach(btn => btn.classList.remove('active'));
+//       tabContents.forEach(content => content.classList.remove('active'));
 
-      button.classList.add('active');
-      document.querySelector(`.tab-content.${target}`).classList.add('active');
-    });
-  });
-});
+//       button.classList.add('active');
+//       document.querySelector(`.tab-content.${target}`).classList.add('active');
+//     });
+//   });
+// });
 
 
 
@@ -180,3 +180,38 @@ sr.reveal(`.home__name, .home__info, .home_about, .about__container, .section__t
 sr.reveal( `.about__card__mobile`, { origin: 'bottom' })
 sr.reveal(`.home__perfil`, { origin: 'right' })
 sr.reveal(`.services__card, .projects__card, .clients__card`, { interval: 90 })
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const tabButtons = document.querySelectorAll(".tab-button");
+    const projects = document.querySelectorAll(".projects__card");
+
+    function showProjects(category) {
+        projects.forEach((project) => {
+            if (project.classList.contains(category)) {
+                project.style.display = "block";
+            } else {
+                project.style.display = "none";
+            }
+        });
+    }
+
+    tabButtons.forEach((button) => {
+        button.addEventListener("click", function() {
+            // Remove active class from all buttons
+            tabButtons.forEach((btn) => btn.classList.remove("active"));
+            // Add active class to the clicked button
+            this.classList.add("active");
+
+            const category = this.getAttribute("data-tab");
+            showProjects(category);
+        });
+    });
+
+    // Show only web projects by default on page load
+    showProjects("web");
+});
+
+
